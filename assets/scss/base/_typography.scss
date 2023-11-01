@@ -1,0 +1,40 @@
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $primary-bold-font, sans-serif;
+}
+
+button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0;
+  box-shadow: none;
+}
+
+form-control:focus:not(:focus-visible) {
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-control:focus,
+form-control:focus-visible {
+  box-shadow: none !important;
+}
+
+ul {
+  margin-bottom: 0;
+}

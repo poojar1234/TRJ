@@ -1,0 +1,67 @@
+.floating-icons {
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    .icon-float {
+        text-align: center;
+        font-size: 1.875rem;
+        z-index: 100;
+        @include content_flex(center, center);
+
+        .icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            @include content_flex(center, center);
+            animation-name: pulse;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+            margin: 10px 0;
+
+            i {
+                color: $white;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.telegram-float {
+    z-index: 1000;
+
+    .telegram-icon {
+        background-color: $telegram-color;
+
+    }
+
+    @keyframes pulse {
+        0% {
+            box-shadow: 0 0 0 0 rgba(3, 162, 241, 0.5);
+        }
+
+        80% {
+            box-shadow: 0 0 0 14px rgba(0, 136, 204, 0);
+        }
+    }
+}
+
+
+.whatsapp-float {
+    .whatsapp-icon {
+        background-color: $whatsapp-color;
+        color: $white;
+    }
+
+    @keyframes pulse {
+        0% {
+            box-shadow: 0 0 0 0 rgba(26, 244, 22, 0.5);
+        }
+
+        80% {
+            box-shadow: 0 0 0 14px rgba(2, 207, 218, 0);
+        }
+    }
+}

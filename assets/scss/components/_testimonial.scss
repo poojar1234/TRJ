@@ -1,0 +1,59 @@
+
+.testimonial-slider{
+    padding: 20px 0 0;
+    .testimonial{
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        font-weight: 500;
+    }
+    .checked{
+        color: $golden;
+        margin-bottom: 8px;
+        &:hover{
+            color: $golden2;
+            cursor: pointer;
+        }
+    }
+    .profile{
+        padding-top: 10px;
+        .name{
+            font-weight: 700;
+        }
+        .designation{
+            font-size: 0.84rem;
+            font-weight: 600;
+        }
+    }
+    .owl-carousel{
+        margin-bottom: 15px;
+        .owl-stage-outer{
+            padding: 10px 0px 0px;
+            height: 340px;
+            @include breakpoint("mobile-max") {
+               height: 310px;
+             }
+            .owl-item {
+                img{
+                    width: 45px !important;
+                    height: 45px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-right: 8px;
+                }
+                .card{
+                   padding: 15px;
+                }
+            }
+        }
+        .owl-nav [class*='owl-']{
+            border-radius: 50% !important;
+            background: inherit !important;
+            border: 2px solid $grey;
+            color: $grey !important;
+            &:hover{
+                border: 2px solid $primary-color;
+                color: $primary-color !important;
+            }
+        }
+    }
+}

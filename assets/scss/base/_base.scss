@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+}
+
+body {
+  color: $grey;
+  font-weight: 400;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  font-family: $primary-regular-font, sans-serif;
+  ;
+}
+
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+  -webkit-transition: 0.3s all ease-in;
+  -o-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in;
+}
